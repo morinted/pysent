@@ -100,7 +100,6 @@ def main(argv):
 
 		print
 
-		linecount += len(titles[x][0])//col + 1
 		for point in points[x]:
 			words = str.split(point)
 			paragraph = ''
@@ -117,7 +116,6 @@ def main(argv):
 				else:
 					lineLength+=len(word)+1
 					paragraph+=word + ' '
-			linecount += lines
 			for y in range (0, len(paragraph)):
 				sys.stdout.write(paragraph[y])
 				time.sleep(.01)
