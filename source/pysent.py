@@ -123,7 +123,18 @@ def main(argv):
 
 			print '\n'
 			if (point is points[x][len(points[x])-1]):
-				print('--------------------------')
+				if x < totalSlides-1:
+					progress = '[Slide '+str(x+1)+' out of '+str(totalSlides)+']'
+					edges = (col-len(progress))//2
+					for z in range(0,col):
+						if z < edges or z >= (edges + len(progress)):
+							sys.stdout.write('-')
+						else:
+							i = z%edges
+							sys.stdout.write(progress[i])
+				else:
+					for z in range(0,col):
+						sys.stdout.write('=')
 			userinput = raw_input()
 			if userinput == 'p':
 				x-=2
