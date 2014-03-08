@@ -57,7 +57,8 @@ def main(argv):
 	userinput = raw_input(prompt)
 
 	#play sideshow
-	for x in range(0, totalSlides):
+	x = 0
+	while x < totalSlides:
 		for r in range (0, row):
 			print
 			time.sleep(.01)
@@ -126,6 +127,13 @@ def main(argv):
 			if (point is points[x][len(points[x])-1]):
 				print('--------------------------')
 			userinput = raw_input()
+			if userinput == 'p':
+				x-=2
+				if x < -1:
+					x=-1
+				break
+		
+		x+=1
 
 	#Draw a box to end slideshow
 	for y in range(0, row):
