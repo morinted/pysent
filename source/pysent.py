@@ -154,6 +154,7 @@ def main(argv):
 
 def getChar(char): #get ASCII A
 	#Font: "Rectangles" from FIGlet. http://www.figlet.org/fontdb_example.cgi?font=rectangles.flf
+	#Added in implementation for (, ), modified for height-limit of 5.
 	ascii = ''
 	if char=='a':
 		ascii = ['     ',' ___ ',"| .'|",'|__,|','     ']
