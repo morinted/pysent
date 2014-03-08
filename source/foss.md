@@ -20,7 +20,7 @@
 
 ------------------------------------
 
-# Open-source means "freedom".
+# Open-Source Means Freedom.
 
 - There are several sub-categories of open software including, but not limited to: open-source, FOSS, FLOSS, and Libre.
 
@@ -30,13 +30,13 @@
 
 ------------------------------------
 
-# (Nonfree) Proprietary Software Exists
+# Proprietary Software
 
-- Proprietary software is lacking in one more of the mentioned liberties.
+- Proprietary (nonfree) software is defined as software lacking in one or more of the mentioned liberties.
 
 1. Only to run for certain purposes. 
 
-	- Time-based liscensing.
+	- Time-based licensing.
 
 2. Hidden or obfuscated source code. 
 
