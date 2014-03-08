@@ -20,11 +20,21 @@ def main(argv):
 		elif opt in ("-i", "--ifile"):
 			inputfile = args[0]
 
-	for y in range(0, row):
-		for x in range(0,col):
-			sys.stdout.write('#')
-			time.sleep(0.001)
+	if col==70 and row==22:
+		#Draw the logo as startup if dimensions are default
+		pysent_logo = getLogo()
+		for x in range(0,len(pysent_logo)):
+			sys.stdout.write(pysent_logo[x])
+			time.sleep(0.002)
 			sys.stdout.flush()
+	else:
+		#Draw a box if different dimensions
+		for y in range(0, row):
+			for x in range(0,col):
+				sys.stdout.write('#')
+				time.sleep(0.002)
+				sys.stdout.flush()
+			sys.stdout.write('\n')
 	
 
 	txt = open(inputfile, 'r')
@@ -117,9 +127,13 @@ def main(argv):
 				print('--------------------------')
 			userinput = raw_input()
 
-		for x2 in range(linecount,row):
-			print
-			time.sleep(.01)
+	#Draw a box to end slideshow
+	for y in range(0, row):
+		for x in range(0,col):
+			sys.stdout.write('#')
+			time.sleep(0.002)
+			sys.stdout.flush()
+		sys.stdout.write('\n')
 
 def getChar(char): #get ASCII A
 	#Font: "Rectangles" from FIGlet. http://www.figlet.org/fontdb_example.cgi?font=rectangles.flf
@@ -249,8 +263,8 @@ def getChar(char): #get ASCII A
 	elif char=='!':
 		ascii = [' __ ','|  |','|  |','|__|','|__|']
 	return ascii
-	
 
-
+def getLogo():
+	return('######################################################################\n######################################################################\n######################################################################\n######################################################################\n######################################################################\n######################################################################\n#####         #   ###   ##         ##         ##    #####   #         \n####    ###  ###   #   ##   ########   ########     ####   #####   ###\n###    ###  #####     ##   ########   ########   #  ###   #####   ####\n##         #######   ##         ##        ###   ##  ##   #####   #####\n#    ############   ########   ##   ########   ###  #   #####   ######\n    ############   ########   ##   ########   ####     #####   #######\n   ############   ##         ##          #   #####    #####   ########\n######################################################################\n######################################################################\n######################################################################\n###################   A command-line presentation   ##################\n###################     tool written in Python.     ##################\n######################################################################\n######################################################################\n######################################################################\n######################################################################')
 if __name__ == "__main__":
 	main(sys.argv[1:])
