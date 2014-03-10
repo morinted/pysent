@@ -74,9 +74,13 @@ def main(argv):
 
 		#Transition to black and back
 		transition = getFadeToBlackTransition()
+		currLine = 0
 		for trnstnLine in transition:
 			print trnstnLine
-			time.sleep(.02)
+			stime = getYofX(currLine, len(transition))
+			stime = 0.02-(stime)*0.01
+			time.sleep(stime)
+			currLine+=1
 
 
 		titleLines = []
@@ -303,9 +307,9 @@ def getLogo():
 
 def getFadeToBlackTransition():
 	transition = []
-	for r in range(0,2*row):
+	for r in range(0,4*row):
 		currentRow = ''
-		chanceOfCharacter = getYofX(r,2*row)-.1
+		chanceOfCharacter = getYofX(r,4*row)-.1
 		for c in range(0,col):
 			rand = random.random()
 			if rand < chanceOfCharacter:
@@ -314,7 +318,7 @@ def getFadeToBlackTransition():
 				currentRow+=' '
 		transition.append(currentRow)
 
-		if r == row:
+		if r == 2*row:
 			currentRow = ''
 			for c in range(0,col):
 				 currentRow+='█'
