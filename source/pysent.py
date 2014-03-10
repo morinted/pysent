@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# coding: utf-8
 
 from __future__ import division
 
@@ -31,8 +32,8 @@ def main(argv):
 		#Draw a box if different dimensions
 		for y in range(0, row):
 			for x in range(0,col):
-				sys.stdout.write('#')
-				time.sleep(0.002)
+				sys.stdout.write('█')
+				time.sleep(0.001)
 				sys.stdout.flush()
 			sys.stdout.write('\n')
 	
@@ -147,8 +148,8 @@ def main(argv):
 	#Draw a box to end slideshow
 	for y in range(0, row):
 		for x in range(0,col):
-			sys.stdout.write('#')
-			time.sleep(0.002)
+			sys.stdout.write('█')
+			time.sleep(0.001)
 			sys.stdout.flush()
 		sys.stdout.write('\n')
 
