@@ -26,7 +26,7 @@ def main(argv):
 		pysent_logo = getLogo()
 		for x in range(0,len(pysent_logo)):
 			sys.stdout.write(pysent_logo[x])
-			time.sleep(0.002)
+			time.sleep(0.001)
 			sys.stdout.flush()
 	else:
 		#Draw a box if different dimensions
@@ -91,12 +91,13 @@ def main(argv):
 			else:
 				for line in range(0,5):
 					titleLine[line] += '  ' + ascii_word[line]
+		
 		#Append last word generated.
 		titleLines.append(list(titleLine))
 		for tLine in titleLines:
 			for line in range(0,5):
 				print tLine[line] 
-		time.sleep(.01)
+				time.sleep(.02)
 		sys.stdout.flush()
 
 		print
