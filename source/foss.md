@@ -8,15 +8,15 @@
 
 - Open-source software is more than just making the source code public.
 	
-	- For example, the GNU Operating System's philosophy guidelines provide 4 basic freedoms that make a software "Free open source software".
+- The GNU Operating System's philosophy guidelines provide 4 basic freedoms that make a software "Free open source software".
 
-		1. Freedom to run for any purpose.
+1. Freedom to run for any purpose.
 
-		2. Freedom to study source code and change.
+2. Freedom to study source code and change.
 
-		3. Freedom to redistribute copies.
+3. Freedom to redistribute copies.
 
-		4. Freedom to redistribute modified copies.
+4. Freedom to redistribute modified copies.
 
 ------------------------------------
 
@@ -24,7 +24,7 @@
 
 - There are several sub-categories of open software including, but not limited to: open-source, FOSS, FLOSS, and Libre.
 
-- Effectively, these come down to the reason for making your software open, and the philosophies around their availability and rights.
+	- Effectively, these come down to the reason for making your software open, and the philosophies around their availability and rights.
 
 - To the user and the developer, the end-result is quite similar.
 
@@ -44,7 +44,7 @@
 
 3. DRM and other methods to disallow redistribution of the product.
 
-4. Not allowed to redistribute modified copies.
+4. Not allowed to redistribute modified copies. (GNU)
 
 	- Even if all other essentials are met, without this freedom, the software is not open-source.
 
@@ -114,7 +114,7 @@
 
 ----------------------------------
 
-# Open-Course, Open Problems.
+# Open-Source, Open Problems.
 
 - Open-source software is easy to trust.
 
@@ -149,3 +149,23 @@
 - Software can change between open-source and closed-source. 
 
 	- Closed-source projects are often re-released as open-source when they are being decommissioned.
+
+----------------------
+
+# Fringe Cases
+
+- You can be open-source while still making money:
+
+- MySQL is open source but there are proprietary licenses available for certain commercial applications. Dual-licensing.
+
+- Git is open source software, but GitHub sells a service for hosting and managing with tight integration with the service. Selling the service.
+
+- Ubuntu has ads built-in to gain money. Don't use Ubuntu. Subsidizing with ads.
+
+- You can have publicly available source-code while still being proprietary:
+
+- Nvidia has good support for Linux with its open source graphics card drivers, but the source code is obfuscated to prevent reverse-engineering of their hardware functionality. Code obfuscation (not really open)
+
+- You can change the license:
+
+- Some software will become open-source at its end-of-life stage after being closed, for example, Netscape Communicator (Netscape 4.x) and StarOffice (Sun Microsystems)
