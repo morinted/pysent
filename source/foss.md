@@ -2,9 +2,7 @@
 
 - Open source software refers to free software. Gratis vs. Libre!
 
-	- That being said, some open source software costs money. The word free is not used in the sense of without cost, but rather, as in little or no restriction.
-
-	- As cheeky example, OpenOffice is owned by the commercial company Sun, and a lot of the philosophies behind the software are not free. Many developers who worked on OpenOffice branched the code and started LibreOffice which follows the freedom philosophy. 
+	- Gratis means without-cost, whereas libre means free as in freedom.
 
 - Open-source software is more than just making the source code public.
 	
@@ -12,11 +10,19 @@
 
 1. Freedom to run for any purpose.
 
+	- For home or commercial use, for example.
+
 2. Freedom to study source code and change.
+
+	- Very fundamental point.
 
 3. Freedom to redistribute copies.
 
+	- What most people associate with open-source.
+
 4. Freedom to redistribute modified copies.
+
+	- An amalgamation of 2 & 3.
 
 ------------------------------------
 
@@ -36,17 +42,19 @@
 
 1. Only to run for certain purposes. 
 
-	- Time-based licensing.
+	- Time-based licensing, home use only, etc.
 
 2. Hidden or obfuscated source code. 
 
-	- Google's Javascript.
+	- Google's Javascript is obviously client-side, but they obfuscate it to make it hard to understand.
 
 3. DRM and other methods to disallow redistribution of the product.
 
+	- Video games are notoriously known for this reason. Diablo 3 and EA's SimCity are games that had bad press due to their DRM.
+
 4. Not allowed to redistribute modified copies. (GNU)
 
-	- Even if all other essentials are met, without this freedom, the software is not open-source.
+	- Even if all other essentials are met, without this freedom, the software is not free and open-source.
 
 ------------------------------------
 
@@ -58,7 +66,7 @@
 
 - Closed-source reduces competition by not giving other companies ideas.
 
-	- It's easy to look at code and find ways to improve it. It is not easy to reverse-engineer a program to figure out how a button works.
+	- If you are starting a start-up, you may choose to keep your source closed to prevent someone with a larger budget and more resources to undercut you.
 
 - Businesses want to make money and it is easier to monetize and retain market share with proprietary software.
 
@@ -74,17 +82,11 @@
 
 	- You may have to defend your licenses and patents in court, inducing heavy fees.
 
-	- Pirating is rampant and companies often waste valuable resources trying to lock down their software instead of improving.
-
-		- When EA Games released SimCity last year, its heavy DRM requiring sign-in and a persistent Internet connection made playing the game nearly impossible. It cost EA money to bring up new servers, rush patches, and severely damaged their reputation. Amazon pulled the game from its shelves temporarily.
-
 - Proprietary software, proprietary support.
 
-	- When a company stops supporting software, all support for it ceases as well. If a popular project is discontinued, without the source-code it cannot be revived by a third-party.
+	- When a proprietary project dies, so does its support. A great example is Windows XP reaching its end-of-life *twice*. It has been extended because its market share is too high.
 
 - Contribution to the project is scarce.
-
-	- If a user notices a bug, he or she must report to the company, and hope that it gets fixed at some point. This can completely damage someone's work flow.
 
 	- With only few developers, proprietary software is prone to old, outdated, and undocumented code as there is no open review system, as well as no incentive to modernize.
 
@@ -96,17 +98,13 @@
 
 	- Anyone can notice a bug, see how to fix it, implement on their side, and then contribute the change to the project.
 
-	- The source-code is completely open so users can notice malicious activity, unlike in proprietary software.
-
 - Support for the software lives as long as the interest in the software remains.
 
-	- As long as there are users of the software who are intelligent enough to know the code, support for the software will exist.
-
-	- If the project dies, and the source code is available, the project can be overtaken by a third-party.
+	- If the project dies, and the source code is available, the project can be overtaken by a third-party. An example is Apache HTTP server, which replaced NCSA HTTPd
 
 - Licensing is easy.
 
-	- Without worrying about distributing the software and keeping track of what the users are doing with the software, you have more focus on what you need to get done, keeping customers happy.
+	- For example, when creating a project on GitHub, there's an option to generate a GPL license with your repo.
 
 - As developers, you have something to show for.
 
@@ -118,19 +116,17 @@
 
 - Open-source software is easy to trust.
 
-	- We assume that, because software is open and the source code is visible, we expect that if the software were malicious that it would not be distributed.
-
-		- This is false.
+	- We assume that, because software is open and the source code is visible, we expect that if the software were malicious that it would not be distributed. This is obviously not always true.
 
 	- With open-source software, we tend to assume that the developers aren't trying to gain anything. This is very far from the truth. Google did not create Android so that phones were more stable. They did it for user behavior data and consequently ad revenue.
 
 - Confusing to the user.
 
-	- Do you know that Android is a fork of Linux? Do you know the difference between Cinnamon and Gnome (FORK)? LibreOffice is a fork of OpenOffice, with a merge of Go-oo. Most Linux operating systems (of which there are 1000s) are forks of Debian, including Ubuntu, Mint, and more. MariaDB is a fork of MySQL. What to use, what are the differences, which is better? There is no easy answer, so this is intimidating and confusing for the user.
+	- Do you know that Android is a fork of Linux? Do you know the difference between Cinnamon and Gnome (FORK)? LibreOffice is a fork of OpenOffice, with a merge of Go-oo. Most Linux operating systems (of which there are 1000s) are forks of Debian, including Ubuntu, Mint, and more. MariaDB is a fork of MySQL. What to use, what are the differences, which is better? There is no easy answer, so this is intimidating and confusing for the user. Oh gosh we could go on forever...
 
 - No guaranteed support.
 
-	- A classic example is that businesses trust Microsoft Word for their office needs. When issues arise, support is prompt. Conversely, LibreOffice's support is not guaranteed and problems can be unpredictable. This is especially true for software that doesn't require payment, as then developers may not have incentive to help users.
+	- A classic example is that businesses trust Microsoft Office for their needs. When issues arise, support is prompt and guaranteed.
 
 - Developer drama.
 
@@ -140,6 +136,8 @@
 
 		- Linux users are known for their opinions and arguments. Some Linux developers are worse.
 
+		- Brendan Eich (creator of JavaScript) was elected CEO of the Mozilla Foundation. He donated $1000 to an anti-gay marriage campaign a few years ago, and the outlash has been loud from the developer and web community, as well as from within Mozilla.
+
 -----------------------
 
 # Open-Source Software - Good or Bad?
@@ -148,24 +146,28 @@
 
 - Software can change between open-source and closed-source. 
 
-	- Closed-source projects are often re-released as open-source when they are being decommissioned.
-
 ----------------------
 
 # Fringe Cases
 
 - You can be open-source while still making money:
 
-- MySQL is open source but there are proprietary licenses available for certain commercial applications. Dual-licensing.
+- MySQL is open source but there are proprietary licenses available for certain commercial applications. (Dual-licensing)
 
-- Git is open source software, but GitHub sells a service for hosting and managing with tight integration with the service. Selling the service.
+- Git is open source software, but GitHub sells a service for hosting and managing with tight integration with the service. (Selling the service)
 
-- Ubuntu has ads built-in to gain money. Don't use Ubuntu. Subsidizing with ads.
+- Ubuntu has ads built-in to gain money. (Don't use Ubuntu) (Subsidizing with ads)
 
 - You can have publicly available source-code while still being proprietary:
 
-- Nvidia has good support for Linux with its open source graphics card drivers, but the source code is obfuscated to prevent reverse-engineering of their hardware functionality. Code obfuscation (not really open)
+- Nvidia has good support for Linux with its open source graphics card drivers, but the source code is obfuscated to prevent reverse-engineering of their hardware functionality. (Code obfuscation) (not really open)
 
 - You can change the license:
 
 - Some software will become open-source at its end-of-life stage after being closed, for example, Netscape Communicator (Netscape 4.x) and StarOffice (Sun Microsystems)
+
+--------------------------
+
+# That's all folks
+
+- Presented by Daniel Murdoch and Ted Morin. You can find the source code for this program, as well as the presentation given today, under http://github.com/morinted/pysent
